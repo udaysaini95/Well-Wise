@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer"; // Already imported
-import FeatureShowcase from "../FeatureShowcase/FeatureShowcase"; // <--- NEW IMPORT
+import { useInView } from "react-intersection-observer";
+import FeatureShowcase from "../FeatureShowcase/FeatureShowcase"; 
 
 export default function Home() {
   const rotatingTexts = [
@@ -144,7 +144,7 @@ export default function Home() {
         >
           Our AI-powered platform doesn’t just track your steps. It gives you
           real wellness insights — life expectancy estimates, personalized diet
-          & exercise plans, and disease risk predictions and will lead to a healthier life .
+          & exercise plans, and disease risk predictions.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl">
