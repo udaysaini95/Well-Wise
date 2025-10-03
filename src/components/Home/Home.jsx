@@ -92,7 +92,7 @@ export default function Home() {
                 to="/About"
                 className="px-8 py-3 rounded-full text-lg font-semibold text-white bg-gradient-to-r from-green-500 to-lime-600 hover:scale-105 hover:shadow-2xl transition-all duration-300"
               >
-                Get Start
+                Start Your Journey Towards Healthier Life
               </Link>
             </motion.div>
           </div>
