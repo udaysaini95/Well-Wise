@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer"; // Already imported
-import FeatureShowcase from "../FeatureShowcase/FeatureShowcase"; // <--- NEW IMPORT
+import { useInView } from "react-intersection-observer";
+import FeatureShowcase from "../FeatureShowcase/FeatureShowcase"; 
 
 export default function Home() {
   const rotatingTexts = [
