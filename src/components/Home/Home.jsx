@@ -5,8 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer"; // Already imported
 import FeatureShowcase from "../FeatureShowcase/FeatureShowcase"; // <--- NEW IMPORT
-import image1 from '../../assets/Images/homeImg-1.jpeg'; // Adjust path based on Home.jsx location
-
+import image1 from '../../assets/Images/homeImg-1.jpeg'; 
 export default function Home() {
   const rotatingTexts = [
     "AI-powered insights.",
