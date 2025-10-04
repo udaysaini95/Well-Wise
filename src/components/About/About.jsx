@@ -2,6 +2,7 @@ import React from "react";
 import aboutImg from '../../assets/Images/aboutImg-1.jpeg'
 import image2 from '../../assets/Images/image2.jpg'
 
+
 export default function About() {
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -16,8 +17,8 @@ export default function About() {
       {/* Background Image Section */}
       <div className="absolute inset-0 z-0">
         <img
-          loading="eager"
-          src={image2}
+          loading="lazy"
+          src={aboutImg}
           alt="A person doing yoga in nature"
           className="w-full h-full object-cover"
         />
