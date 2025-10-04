@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer"; // Already imported
 import FeatureShowcase from "../FeatureShowcase/FeatureShowcase"; // <--- NEW IMPORT
+import image1 from '../../assets/Images/homeImg-1.jpeg'; // Adjust path based on Home.jsx location
 
 export default function Home() {
   const rotatingTexts = [
@@ -22,7 +23,7 @@ export default function Home() {
     }, 3000); // Change text every 3 seconds
 
     return () => clearInterval(interval); // Cleanup on component unmount
-  }, [rotatingTexts.length]);
+  }, []);
 
   const [refImpact, inViewImpact] = useInView({
     // Renamed ref for clarity with multiple useInView hooks
@@ -37,7 +38,7 @@ export default function Home() {
         className="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
         style={{
           backgroundImage:
-            "url('https://images.pexels.com/photos/17673362/pexels-photo-17673362.jpeg')",
+            `url(${image1})`,
         }}
       >
         <div className="absolute inset-0 bg-black/50"></div>

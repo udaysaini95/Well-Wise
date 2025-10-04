@@ -3,8 +3,13 @@ import { useParams } from 'react-router-dom'
 function User() {
   const { userId } = useParams();
   return (
-    <div className='bg-orange-500 text-3xl text-black text-center py-5' >User:{ userId}</div>
-  )
+    <section
+      className="relative w-full h-screen bg-cover bg-center flex items-center justify-center"
+      style={{
+        backgroundImage: `url('https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg')`,
+      }}
+    ></section>
+  );
 }
 
 export default User

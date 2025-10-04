@@ -1,4 +1,6 @@
 import React from "react";
+import aboutImg from '../../assets/Images/aboutImg-1.jpeg'
+import image2 from '../../assets/Images/image2.jpg'
 
 export default function About() {
   const handleSubmit = (event) => {
@@ -14,7 +16,8 @@ export default function About() {
       {/* Background Image Section */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.pexels.com/photos/4021262/pexels-photo-4021262.jpeg"
+          loading="eager"
+          src={image2}
           alt="A person doing yoga in nature"
           className="w-full h-full object-cover"
         />
